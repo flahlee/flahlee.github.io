@@ -1073,8 +1073,10 @@ navBar.scroller a{
     navBar {
         display: block;
         height: 55px;
+        width: 500px;
         background-color: #2A1E15;
     }
+
 
     .toggle {
         display: block;

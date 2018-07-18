@@ -120,6 +120,7 @@ ul li a {
 .wrapper {
     margin: 0;
     padding: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 1fr 20%;
 }
@@ -145,13 +146,17 @@ ul li a {
     height: 100vh;
 }
 
+.header img{
+    width: 100%;
+}
+
 /* SUB-HEADER */
 .sub-header-bk {
     grid-column: 1/4;
     background-color: #EBECEB;
     display: grid;
     grid-template-columns: 20% 1fr 20%;
-    margin-top: -100px;
+    margin-top: 0px;
 }
 .sub-header {
     grid-column: 2/3;
@@ -202,12 +207,17 @@ ul li a {
     display: flex;
     font-family: 'Open Sans', sans-serif;
 }
+
  
 .home-section1-content2 {
     padding-left: 30px;
     font-weight: 300;
     color: #848984;
 }
+.home-section1-content-name{
+    width: 50%;
+}
+
 
 .home-section1-content-name h1 {
     color: #333;
@@ -262,7 +272,7 @@ ul li a {
     color: #333;
     font-weight: 300;
     font-size: .9em;
-    padding-right: 150px;
+    padding-right: 40px;
     line-height: 20px;
     margin-bottom: 30px;
 }
@@ -273,7 +283,7 @@ ul li a {
     font-weight: 300;
     margin-bottom: 100px;
     font-size: .9em;
-    padding-right: 150px;
+    padding-right: 50px;
 }
 
 .home-section2-content1 a {
@@ -298,9 +308,52 @@ ul li a {
     margin-bottom: 80px;
 }
 
+
 .home-section3-content1 {
-    margin-right: 50px;
+    padding-top: 50px;
 }
+
+.home-section3-content1 h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.home-section3-content1 p {
+    color: #333;
+    font-weight: 300;
+    font-size: .9em;
+    padding-right: 40px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.home-section3-content1 h2 {
+    color: #848984;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 100px;
+    font-size: .9em;
+    padding-right: 50px;
+}
+
+.home-section3-content1 a {
+    text-decoration: none;
+    color: #6CA3BB;
+    border: 2px solid #6CA3BB;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.home-section3-content1 a:hover {
+    color: #fff;
+    background-color: #6CA3BB;
+    transition: .3s;
+}
+
+
+
 
 /* HOME SECTION 4 */
 .home-section4  {
@@ -342,13 +395,22 @@ ul li a {
     transition: .3s;
 }
 
+/* SECTION 5 */
+.home-section5{
+    width: 100%;
+}
+
+.home-section5 img {
+    width: 100%;
+}
+
 /* HOME SECTION 6 */
 .home-section6-bk {
     grid-column: 1/4;
     background-color: #E0ECF2;
     margin: -5px;
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 15% 1fr 15%;
 }
 
 .home-section6 {
@@ -423,7 +485,6 @@ ul li a {
 }
 .footer-nav {
     display: flex;
-    /* border: 1px solid red; */
     float: right;
 }
 
@@ -866,12 +927,16 @@ input[type=subject] {
 
 @media(max-width: 500px) {
     .wrapper {
-        max-width: 500px;
+        width: 500px;
     }
     .header {
         display: block;
         width: 500px;
         height: 27.5vh;
+    }
+
+    .header img {
+        width: 100%;
     }
     
     .header img {
@@ -902,6 +967,7 @@ input[type=subject] {
         padding:0;
         margin-bottom: 50px;
     }
+
 
     .intro-bk {
         display: block;
@@ -938,8 +1004,9 @@ input[type=subject] {
     /* HOME-SECTION 2 */
     .home-section2 {
         display: block;
-        width: 500px;
-        margin-left: -5px;
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: -100px;
     }
     .home-section2-content2 {
@@ -947,23 +1014,31 @@ input[type=subject] {
     }
 
     .home-section2-content2 img {
-        width: 400px;
-        margin-left: -40px;
+        width: 300px;
+        margin-left: -10px;
     }
 
     .home-section3 {
+        display: block;
+        width: 300px;
+
+    }
+
+    .home-section3-content 1 {
         display: block;
         width: 500px;
     }
 
     .home-section3-content1 img{
-        width: 400px;
+        width: 300px;
         margin-left: 10px;
     }
 
     .home-section2-content1 {
-        margin-left: -15px;
+        margin-left: 0px;
+        display: block;
     }
+
 
     .home-section4 {
         display: block;
@@ -1242,12 +1317,5 @@ input[type=subject] {
         width: 500px;
         margin-left: -30px;
     }
-
-    
-
-  
-
-
-
 
 }
