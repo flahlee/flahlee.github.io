@@ -1,0 +1,356 @@
+#body-background1{
+    width: 100%;
+    height: 100vh;
+    background: url(images/main0.jpg);  
+    background-size: cover;
+}
+#body {
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 0 auto;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+nav.back{
+    background: rgba(56, 27, 27, 0.781); 
+    height: 70px;
+    padding-bottom: 50px;
+}
+
+nav h1{
+    float: left;
+    color: #ffffff;
+    width: 300px;
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 60px;
+}
+
+nav.back h1{
+    font-size: 30px;
+    transition: .5s;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding-right: 60px;
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav.back ul li a{
+    font-size: 15px;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color:  rgb(56, 27, 27);
+}
+
+#header-content {
+    text-align: center;
+    margin-top: 300px;
+    background: rgba(56, 27, 27, 0.685);
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+#header-content h2{
+    font-size: 120px;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    margin: 0px;
+}
+
+#header-content p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#header-content a {
+    border: 1px solid white;
+    color: #fdfbfb;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+#header-content a:hover {
+    color:  rgb(56, 27, 27);
+    background-color: #ffffff77;
+}
+
+/* ABOUT PAGE */
+#about-content {
+    margin: 0 auto;
+    max-width: 1360px;
+    padding-bottom: 70px;
+}
+
+#about-content img {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.text-content {
+    width: 900px;
+    float: right;
+    margin-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-content h1{
+    width: 500px;
+    margin-left: 30px;
+    color: #463d3d;
+    font-size: 40px;
+}
+
+.text-content p {
+    width: 350px;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 1.8;
+}
+
+/* FOOD PAGE */
+#food-content {
+    margin: 0 auto;
+    max-width: 1360px;
+}
+
+
+#food-content img {
+    display: inline-block;
+    -webkit-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+}
+
+#our-food {
+    width: 450px;
+    float: right;
+    margin-top: 200px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+#our-food h1{
+    color: #463d3d;
+    font-size: 40px;
+}
+
+#our-food p {
+    font-size: 14px;
+    line-height: 1.8;
+    width: 350px;
+    margin-left: 50px;
+}
+
+/* MENU PAGE */
+
+#menu-background {
+    background-color: rgba(56, 27, 27, 0.075);
+}
+#menu-content {
+    margin: 0 auto;
+    max-width: 1360px;
+    padding-bottom: 40px;
+}
+
+#menu-content h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #463d3d;
+    font-size: 40px;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+.menu {
+    width: 350px;
+    display: inline-block;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: 10px solid #463d3d13;
+    padding-bottom: 20px;
+    -webkit-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+}
+
+.menu h3{
+    color: #463d3d;
+    font-size: 18px;
+}
+
+.menu p {
+    font-size: 14px;
+    width: 350px;
+
+}
+
+.menu img {
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.menu a {
+    border: 2px solid #463d3d5b;
+    padding: 5px;
+    color: #463d3d;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu a:hover{
+    background-color: #d6d5d5be;
+    color: #f75f5f;
+}
+
+#full-menu a{
+    color: #463d3d;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#full-menu a:hover {
+    color: #f75f5f;
+}
+
+/* HOW IT WORKS PAGE */
+
+#how-content {
+    margin: 0 auto;
+    max-width: 1360px;
+    padding-bottom: 100px;
+}
+
+#how-content h1{
+    font-family: 'Quicksand', sans-serif;
+    color: #463d3d;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+.direction1 {
+    width: 300px;
+    display: inline-block;
+    margin-left: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.direction1 img {
+    width: 50px;
+}
+
+.direction1 h3{
+    color: #463d3d;
+    font-size: 18px;
+}
+
+
+.direction1 p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.direction {
+    width: 300px;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.direction img {
+    width: 50px;
+}
+
+.direction h3{
+    color: #463d3d;
+    font-size: 18px;
+}
+
+
+.direction p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.side-image img{
+    width: 350px;
+    float: right;
+}
+
+/* CONTACT PAGE */
+
+#contact-background{
+    background: linear-gradient(180deg, rgba(107,73,73,1) 0%, rgba(107,43,43,1) 100%);
+    -webkit-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 28px -5px rgba(0,0,0,0.75);
+}
+
+#contact-content {
+    margin: 0 auto;
+    max-width: 1360px;
+
+}
+
+.contact-form {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact-content h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+
+#contact-content p{
+    font-size: 16px;
+    margin-left: 60px;
+
+}
+
