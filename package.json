@@ -32,7 +32,7 @@
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.1.0",
+        "@fortawesome/fontawesome-free": "^5.2.0",
         "browser-sync": "2.24.5",
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.4",
