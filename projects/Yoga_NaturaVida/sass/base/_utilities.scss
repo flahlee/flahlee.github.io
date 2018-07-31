@@ -1,0 +1,23 @@
+.u-center-text { text-align: center;}
+
+.u-margin-bottom-small { margin-bottom: 1.5rem; } //20px;
+.u-margin-bottom-medium { 
+    margin-bottom: 4rem; 
+
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+    }
+
+} //40px;
+.u-margin-bottom-big { 
+    margin-bottom: 8rem; 
+
+    @include respond(tab-port){
+        margin-bottom: 5rem;
+    }
+} //80px;
+
+.u-margin-top-big { margin-top: 8rem; } //80px;
+.u-margin-top-huge { margin-top: 10rem; } //100px;
+
+.p-padding-small { padding: 0 5rem; }

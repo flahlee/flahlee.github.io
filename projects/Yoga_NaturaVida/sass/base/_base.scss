@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 10px; also bad practice to add pixels- 
+    better to translate to percentage 
+    default font size is 16px- if i want to change to 
+    10px i have to divide 10 by 16 (10/16 = 0.625) = 0.625*16 = 10
+    This defines what 1rem is*/
+    font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200  MAKE SURE TO ADD THE LARGER WIDTH FIRST AND THEN TO THE SMALLER WIDTH
+        font-size: 56.25%; // 1rem = 9px, 9/16 = 0.05625
+    }
+
+    @include respond(tab-port) { // width < 900
+        font-size: 50%; // 1rem = 8px, 8/16 = 0.50
+    }
+    @include respond(phone) {
+        font-size: 30%; // 1rem = 4.8px, 4.8/16 = 0.30
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12, 12/16 = 0.75
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
+}
